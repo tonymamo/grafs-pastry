@@ -19,6 +19,11 @@ angular.module('app', ['ui.router'])
       path: '/flavors', 
       title: 'Flavors',
       icon: 'spoon-knife'
+    },
+    {
+      path: '/contact',
+      title: 'Contact',
+      icon: 'bubble'
     }
   ];
   $scope.isActive = function(item) {
@@ -48,6 +53,10 @@ angular.module('app', ['ui.router'])
     .state('our-pastries', {
       url: '/our-pastries',
       templateUrl: 'partials/our-pastries.html'
+    })
+    .state('contact', {
+      url: '/contact',
+      templateUrl: 'partials/contact.html'
     })
     .state('flavors', {
       url: '/flavors',

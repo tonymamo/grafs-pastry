@@ -3,6 +3,7 @@
 
 @import 'rainier-framework/rainier';
 @import 'header';
+@import 'wufoo';
 
 body {
   background: url('/images/bg.png');
@@ -35,4 +36,8 @@ body {
   width: 100%;
   margin-bottom: $spacer;
   border-radius: $border-radius;
+}
+
+.facebook {
+  overflow-x: auto;
 }
