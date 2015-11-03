@@ -1,0 +1,82 @@
+//
+//    Styles start from small and go larger (mobile-first approach)
+//
+//    min-width: 35em;  -- Adds more spacing to various elements
+//    min-width: 50em;  -- Turns grid into columns with different widths
+//    min-width: 75em;  -- Bump up font size
+//    min-width: 100em; -- Bump up font size
+//
+@media all and (min-width: 35em) {
+    
+    body {
+        padding: $base-spacing;
+    }
+    
+    .container {
+        @include rounded-corners;
+    }
+
+    .visible-small {
+        display: none;
+    }
+    
+    .header__logo, 
+    .header__nav {
+       display: inline-block;
+       *display: inline;
+    }
+    
+    .header__logo {
+        margin-right: $half-spacing;
+    }
+    
+    .site-nav__list-item a {
+        padding: 0 $base-spacing 0 0;
+    }
+}
+
+@media all and (min-width: 50em) {
+    
+    .one-fourth,
+    .one-half,
+    .three-fourths,
+    .one-third,
+    .two-thirds {
+        display: inline-block;
+        float: left;
+    }
+    
+    .one-fourth    { width: 25%; }
+    .one-third     { width: 33%; }
+    .one-half      { width: 50%; }
+    .two-thirds    { width: 66%; }
+    .three-fourths { width: 75%; }
+    
+    .ie .one-fourth,    
+    .ie .one-half,      
+    .ie .three-fourths, 
+    .ie .one-third,     
+    .ie .two-thirds    { width: 100%; }
+    
+    .row .grid {
+        padding-right: 5%;
+    }
+
+    .row .grid:last-child {
+        padding-right: 0;
+    }
+    
+    .icon-clock:before, 
+    .icon-location:before, 
+    .icon-thumbs-up:before {
+        display: none;
+    }
+}
+
+@media all and (min-width: 75em) {
+    html { font-size: 125%; }
+}
+
+@media all and (min-width: 100em) {
+    html { font-size: 150%; }
+}

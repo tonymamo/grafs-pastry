@@ -1,0 +1,110 @@
+//
+//    Begin Site Specific Styles
+//
+.container {
+    margin: 0 auto;
+    padding: $base-spacing;
+    background-color: white;
+    border: 0.063em solid $lavender;    
+    max-width: 60em;
+    -webkit-box-shadow: 0 0 $half-spacing rgba($lavender, .75);
+       -moz-box-shadow: 0 0 $half-spacing rgba($lavender, .75);
+            box-shadow: 0 0 $half-spacing rgba($lavender, .75);
+}
+
+.header__logo, 
+.header__nav {
+   display: block;
+   text-align: center;
+}
+
+.header__logo {
+    font-size: 3em;
+    color: $purple;
+    font-family: $brand-font;
+}
+
+.site-nav {
+    padding: 0;
+    margin: 0 0 $half-spacing 0;
+    *display: inline;
+}
+
+.site-nav__list-item a {
+    color: $dark-grey;
+    padding: 0 $half-spacing 0 0;
+    display: block;
+    font-size: .8em;
+    letter-spacing: .125em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $sans-serif;
+    &:hover {
+        color: $purple;
+   } 
+}
+
+.welcome-images__list-item {
+    width: 30%;
+    margin-right: 3%;
+}
+
+.welcome-images__list-item--last {
+    margin-right: 0;
+}
+
+.bordered-image {
+    width: 100%;
+    border: .063em solid $lavender;
+    background: $light-grey;
+    padding: #{$half-spacing/2};
+}
+
+.pairing__left, 
+.pairing__right {
+    display: inline-block;
+    margin: 0;
+}
+
+.pairing__left {
+    width: 56%;
+    margin-bottom: $half-spacing;
+}
+
+.pairing__right {
+    width: 41%;
+    font-family: $sans-serif;
+    text-align: right;
+    float: right;
+    color: $dark-grey;
+}
+
+.ie .pairing__left,
+.ie .pairing__right {
+    width: 49%;
+    float: none;
+    display: inline;
+}
+
+.hr {
+    border-bottom: .063em solid $lavender;
+    border-top:  none;
+    margin: $base-spacing 0;
+}
+
+.copyright {
+    margin: 0;
+    color: $dark-grey;
+    font-size: .8em;
+    text-align: center;
+    font-family: $sans-serif;
+}
+
+.ie i span {
+    margin-right: $half-spacing;
+    font-style: normal;
+}
+
+.ie .visible-small {
+    display: none;
+}

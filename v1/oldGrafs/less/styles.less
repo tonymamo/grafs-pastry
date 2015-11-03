@@ -1,0 +1,31 @@
+@grey: #ddd;
+@light-grey: #f9f9f9;
+@lightest-grey: #fcfcfc;
+@text-color: #444;
+@base-spacing: 20px;
+
+.rounded-corners (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1em;
+    color: @text-color;
+    background-color: @light-grey;
+}
+
+.container {
+    margin: @base-spacing;
+    padding: @base-spacing;
+    background-color: @lightest-grey;
+    border: 1px solid @grey;
+    .rounded-corners; 
+}

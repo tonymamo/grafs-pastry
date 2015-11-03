@@ -1,0 +1,34 @@
+//
+// Set global stylin on elements themselves, including html, body, and links
+//
+* {
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+    *behavior: url(/js/boxsizing.htc);
+}
+
+html {
+    font: $base-font-size/#{$line-height-ratio} $serif;
+    overflow-y: scroll;
+    min-height: 100%;
+}
+
+body {
+    background: url('../images/bg.png');
+    color: $text-color;
+    background-color: $light-grey;
+    padding: 0;
+}
+
+a,
+a:visited {
+    color: $purple;
+    font-family: $sans-serif;
+    text-decoration: none;
+    @include transition;
+    &:hover {
+        color: lighten($purple, 20%);
+        text-decoration: underline;
+    }
+}

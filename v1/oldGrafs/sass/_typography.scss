@@ -1,0 +1,15 @@
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: normal;
+}
+
+h1, .alpha   { font-size: 2.25em; } //36px
+h2, .beta    { font-size: 1.875em;} //30px
+h3, .gamma   { font-size: 1.5em;  } //24px
+h4, .delta   { font-size: 1.25em; } //20px
+h5, .epsilon { font-size: 1em;    } //16px
+h6, .zeta    { font-size: .875em; } //14px
+
+p, dl {
+    margin: 0 0 $base-spacing 0;
+}

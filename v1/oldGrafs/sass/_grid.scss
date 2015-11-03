@@ -1,0 +1,32 @@
+//
+// Each .row clears itself, doesn't require grid classes inside
+// If grid classes present, must add up to 1 
+//
+.row {
+    width: 100%;
+    margin-bottom: $half-spacing;
+}
+
+.row:before,
+.row:after {
+    display: table;
+    line-height: 0;
+    content: "";
+  }
+
+.row:after {
+    clear: both;
+}
+
+//
+// Grid classes start out at 100%, become columns in Media Query file 
+// (mobile first approach)
+//
+.one-fourth,
+.one-half,
+.three-fourths,
+.one-third,
+.two-thirds {
+    display: block;
+    width: 100%;
+}

@@ -1,0 +1,45 @@
+.btn {
+    display: inline-block; 
+    margin-bottom: 0;
+    font-size: $base-font-size;
+    color: $text-color;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: $grey;
+    border: .063em solid $grey;
+    padding: #{$half-spacing/2} $half-spacing;
+    @include rounded-corners;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn:visited {
+    color: $text-color;
+    text-decoration: none;
+}
+
+.btn:focus {
+    outline: thin dotted $purple;
+    outline-offset: -.125em;
+}
+
+.btn:active {
+    position: relative;
+    top: 1px;
+}
+
+.btn--primary,
+.btn--primary:hover,
+.btn--primary:focus,
+.btn--primary:active,
+.btn--primary:visited {
+    color: #ffffff;
+    background-color: $purple;
+}
+
+.btn--full {
+    display: block;
+    margin-bottom: $half-spacing;
+}

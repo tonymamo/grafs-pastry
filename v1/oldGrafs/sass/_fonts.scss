@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Lavanderia';
+    src: url('../fonts/lavanderia_regular-webfont.eot');
+    src: url('../fonts/lavanderia_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lavanderia_regular-webfont.woff') format('woff'),
+         url('../fonts/lavanderia_regular-webfont.ttf') format('truetype'),
+         url('../fonts/lavanderia_regular-webfont.svg#lavanderia') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'iconfont';
+	src:url('../fonts/iconfont.eot');
+	src:url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/iconfont.woff') format('woff'),
+		url('../fonts/iconfont.ttf') format('truetype'),
+		url('../fonts/iconfont.svg#iconfont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+// Use the following CSS code if you want to use data attributes for inserting your icons
+[data-icon]:before { 
+	font-family: 'iconfont';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+.icon-home:before, 
+.icon-phone:before, 
+.icon-map:before, 
+.icon-clock:before, 
+.icon-location:before, 
+.icon-facebook:before, 
+.icon-facebook-2:before, 
+.icon-bubbles:before, 
+.icon-thumbs-up:before, 
+.icon-file:before, 
+.icon-camera:before {
+    font-family: 'iconfont';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+.icon-home:before         { content: "\68"; }
+.icon-phone:before        { content: "\70"; }
+.icon-map:before          { content: "\6d"; }
+.icon-clock:before        { content: "\74"; }
+.icon-location:before     { content: "\2e"; }
+.icon-facebook:before     { content: "\46"; }
+.icon-facebook-2:before   { content: "\66"; }
+.icon-bubbles:before      { content: "\73"; }
+.icon-thumbs-up:before    { content: "\5e"; }
+.icon-file:before         {	content: "\6c"; }
+.icon-camera:before       { content: "\63"; }

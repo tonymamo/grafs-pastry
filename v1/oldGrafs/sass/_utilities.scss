@@ -1,0 +1,11 @@
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.visible-small {
+    display: block; // changes to "none" in Media query (mobile first)
+}

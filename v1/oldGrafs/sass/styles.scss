@@ -1,0 +1,54 @@
+//
+//    Variables
+//
+$base-font-size:    1em !default;
+$base-line-height:  1.5em !default;
+
+$base-spacing: $base-line-height!default;
+$half-spacing: $base-spacing / 2!default;
+$line-height-ratio: $base-line-height / $base-font-size;
+
+$dark-grey: #9d9d9d;
+$grey: #ddd;
+$light-grey: #f5f5f5;
+$lightest-grey: #fcfcfc;
+$lavender: #ccbde3;
+$purple: #8811BB;
+$text-color: #4d4d4d;
+
+$serif: "ff-meta-serif-web-pro", Georgia, serif;
+$sans-serif: "proxima-nova", Helvetica, sans-serif;
+$brand-font: "Lavanderia", $serif;
+
+//
+//    Mixins
+//
+@mixin rounded-corners($radius: .25em) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+         -o-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
+}
+
+@mixin transition {
+    -webkit-transition: all 0.2s ease-out;
+       -moz-transition: all 0.2s ease-out;
+         -o-transition: all 0.2s ease-out;
+        -ms-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+}
+
+//
+//    Imports
+//
+@import "normalize";
+@import "global";
+@import "grid";
+@import "fonts";
+@import "typography";
+@import "abstractions";
+@import "buttons";
+@import "utilities";
+@import "site";
+@import "mq";

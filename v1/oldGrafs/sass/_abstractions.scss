@@ -1,0 +1,12 @@
+.horizontal-list {
+    list-style: none;
+    margin-left: 0;
+    padding: 0;
+}
+
+.horizontal-list > li,
+.horizontal-list > li > a {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
