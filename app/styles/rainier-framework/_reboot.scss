@@ -3,7 +3,6 @@
 // Global resets to common HTML elements and more for easier usage by Bootstrap.
 // Builds on the resets of Normalize.css.
 
-
 // Reset the box-sizing
 //
 // Change from `box-sizing: content-box` to `border-box` so that when you add
@@ -13,9 +12,9 @@
 //
 // Heads up! This reset may cause conflicts with some third-party widgets. For
 // recommendations on resolving such conflicts, see
-// http://getbootstrap.com/getting-started/#third-box-sizing.
+// https://getbootstrap.com/getting-started/#third-box-sizing.
 //
-// Credit: shttp://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+// Credit: shttps://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
 
 html {
   box-sizing: border-box;
@@ -27,30 +26,38 @@ html {
   box-sizing: inherit;
 }
 
-
 // Make viewport responsive
 //
 // @viewport is needed because IE 10+ doesn't honor <meta name="viewport"> in
-// some cases. See http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/.
+// some cases. See https://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/.
 // Eventually @viewport will replace <meta name="viewport">. It's been manually
 // prefixed for forward-compatibility.
 //
 // However, `device-width` is broken on IE 10 on Windows (Phone) 8,
-// (see http://timkadlec.com/2013/01/windows-phone-8-and-device-width/ and https://github.com/twbs/bootstrap/issues/10497)
+// (see https://timkadlec.com/2013/01/windows-phone-8-and-device-width/ and https://github.com/twbs/bootstrap/issues/10497)
 // and the fix for that involves a snippet of JavaScript to sniff the user agent
 // and apply some conditional CSS.
 //
-// See http://getbootstrap.com/getting-started/#support-ie10-width for the relevant hack.
-
+// See https://getbootstrap.com/getting-started/#support-ie10-width for the relevant hack.
 
 // Wrap `@viewport` with `@at-root` for when folks do a nested import (e.g.,
 // `.class-name { @import "filename"; }`).
 @at-root {
-  @-moz-viewport      { width: device-width; }
-  @-ms-viewport       { width: device-width; }
-  @-o-viewport        { width: device-width; }
-  @-webkit-viewport   { width: device-width; }
-  @viewport           { width: device-width; }
+  @-moz-viewport {
+    width: device-width;
+  }
+  @-ms-viewport {
+    width: device-width;
+  }
+  @-o-viewport {
+    width: device-width;
+  }
+  @-webkit-viewport {
+    width: device-width;
+  }
+  @viewport {
+    width: device-width;
+  }
 }
 
 //
@@ -61,7 +68,7 @@ html {
   // Sets a specific default `font-size` for user with `rem` type scales.
   font-size: $font-size-root;
   // Changes the default tap highlight to be completely transparent in iOS.
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
@@ -75,7 +82,6 @@ body {
   background-color: $body-bg;
 }
 
-
 //
 // Typography
 //
@@ -84,9 +90,14 @@ body {
 //
 // By default, `<h1>`-`<h6>` all receive top and bottom margins. We nuke the top
 // margin for easier control within type scales as it avoids margin collapsing.
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 // Reset margins on paragraphs
@@ -129,14 +140,13 @@ dt {
 }
 
 dd {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   margin-left: 0; // Undo browser default
 }
 
 blockquote {
   margin: 0 0 1rem;
 }
-
 
 //
 // Links
@@ -156,7 +166,6 @@ a {
   }
 }
 
-
 //
 // Code
 //
@@ -168,7 +177,6 @@ pre {
   margin-bottom: 1rem;
 }
 
-
 //
 // Figures
 //
@@ -178,8 +186,6 @@ figure {
   // We reset that to create a better flow in-page.
   margin: 0 0 1rem;
 }
-
-
 
 //
 // Images
@@ -191,7 +197,6 @@ img {
   vertical-align: middle;
 }
 
-
 // iOS "clickable elements" fix for role="button"
 //
 // Fixes "clickability" issue (and more generally, the firing of events such as focus as well)
@@ -202,7 +207,6 @@ img {
 [role="button"] {
   cursor: pointer;
 }
-
 
 //
 // Tables
@@ -226,7 +230,6 @@ th {
   text-align: left;
 }
 
-
 //
 // Forms
 //
@@ -234,7 +237,7 @@ th {
 label {
   // Allow labels can use `margin` for spacing.
   display: inline-block;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 input,
@@ -270,10 +273,10 @@ legend {
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   font-size: 1.5rem;
   line-height: inherit;
-//  border: 0;
+  //  border: 0;
 }
 
 input[type="search"] {
@@ -287,7 +290,7 @@ input[type="search"] {
 // todo: needed?
 output {
   display: inline-block;
-//  font-size: $font-size-base;
-//  line-height: $line-height;
-//  color: $input-color;
+  //  font-size: $font-size-base;
+  //  line-height: $line-height;
+  //  color: $input-color;
 }

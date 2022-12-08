@@ -1,21 +1,31 @@
-<header class="header" role="banner">	
-	<h1 class="header__logo display-1"><a ui-sref="home">Graf's Pastry</a></h1>
-	<nav class="main-nav" role="navigation" ng-controller="navCtrl">
-		<ul class="list-unstyled horizontal-list">
-			<li ng-repeat="item in items">
-				<a href="#{{item.path}}" class="main-nav__item" ng-class="{ 'main-nav__item--active': isActive(item)}">
-					<span class="icon icon-{{item.icon}}"></span>
-					{{item.title}}
-				</a>
-			</li>
-		</ul>
-	</nav>
-	<div class="grid header__helpers">
-        <p class="grid__sm-6">
-            <a href="tel:+12488518181" class="button button--block button--primary"><i class="icon icon-phone"></i> Call Us</a>
-        </p>
-        <p class="grid__sm-6">
-            <a href="http://maps.google.com/maps?q=30010+W.+12+Mile+Rd+Farmington+Hills+MI+48334&hl=en&safe=off&hnear=30010+W+12+Mile+Rd,+Farmington+Hills,+Michigan+48334&gl=us&t=m&z=16" class="button button--block"><i class="icon icon-map"></i> Directions</a>
-        </p>
-    </div>
+<header class="header" role="banner">
+  <h1 class="header__logo display-1"><a ui-sref="home">Graf's Pastry</a></h1>
+  <nav class="main-nav" role="navigation" ng-controller="navCtrl">
+    <ul class="list-unstyled horizontal-list">
+      <li ng-repeat="item in items">
+        <a
+          href="#{{item.path}}"
+          class="main-nav__item"
+          ng-class="{ 'main-nav__item--active': isActive(item)}"
+        >
+          <span class="icon icon-{{item.icon}}"></span>
+          {{item.title}}
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="grid header__helpers">
+    <p class="grid__sm-6">
+      <a href="tel:+12488518181" class="button button--block button--primary"
+        ><i class="icon icon-phone"></i> Call Us</a
+      >
+    </p>
+    <p class="grid__sm-6">
+      <a
+        href="https://maps.google.com/maps?q=30010+W.+12+Mile+Rd+Farmington+Hills+MI+48334&hl=en&safe=off&hnear=30010+W+12+Mile+Rd,+Farmington+Hills,+Michigan+48334&gl=us&t=m&z=16"
+        class="button button--block"
+        ><i class="icon icon-map"></i> Directions</a
+      >
+    </p>
+  </div>
 </header>

@@ -1,7 +1,6 @@
 // Embedded icons from Open Iconic.
 // Released under MIT and copyright 2014 Waybury.
-// http://useiconic.com/open
-
+// https://useiconic.com/open
 
 // Checkboxes and radios
 //
@@ -20,7 +19,7 @@
     opacity: 0;
 
     &:focus ~ .c-indicator {
-      @include box-shadow(0 0 0 .075rem #fff, 0 0 0 .2rem #0074d9);
+      @include box-shadow(0 0 0 0.075rem #fff, 0 0 0 0.2rem #0074d9);
     }
 
     &:checked ~ .c-indicator {
@@ -61,7 +60,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;
-  @include box-shadow(inset 0 .125rem .125rem rgba(0,0,0,.1));
+  @include box-shadow(inset 0 0.125rem 0.125rem rgba(0, 0, 0, 0.1));
 }
 
 // Checkboxes
@@ -70,7 +69,7 @@
 
 .c-checkbox {
   .c-indicator {
-    border-radius: .25rem;
+    border-radius: 0.25rem;
   }
 
   input:checked ~ .c-indicator {
@@ -98,7 +97,6 @@
   }
 }
 
-
 // Layout options
 //
 // By default radios and checkboxes are `inline-block` with no additional spacing
@@ -110,7 +108,7 @@
 
     &:after {
       display: block;
-      margin-bottom: .25rem;
+      margin-bottom: 0.25rem;
       content: "";
     }
 
@@ -120,18 +118,19 @@
   }
 }
 
-
 // Select
 //
 // Replaces the browser default select with a custom one, mostly pulled from
-// http://primercss.io.
+// https://primercss.io.
 
 .c-select {
   display: inline-block;
   max-width: 100%;
-  padding: .375rem 1.75rem .375rem .75rem;
+  padding: 0.375rem 1.75rem 0.375rem 0.75rem;
   vertical-align: middle;
-	background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAMAAACzvE1FAAAADFBMVEUzMzMzMzMzMzMzMzMKAG/3AAAAA3RSTlMAf4C/aSLHAAAAPElEQVR42q3NMQ4AIAgEQTn//2cLdRKppSGzBYwzVXvznNWs8C58CiussPJj8h6NwgorrKRdTvuV9v16Afn0AYFOB7aYAAAAAElFTkSuQmCC) no-repeat right .75rem center;
+  background: #fff
+    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAMAAACzvE1FAAAADFBMVEUzMzMzMzMzMzMzMzMKAG/3AAAAA3RSTlMAf4C/aSLHAAAAPElEQVR42q3NMQ4AIAgEQTn//2cLdRKppSGzBYwzVXvznNWs8C58CiussPJj8h6NwgorrKRdTvuV9v16Afn0AYFOB7aYAAAAAElFTkSuQmCC)
+    no-repeat right 0.75rem center;
   background-size: 8px 10px;
   border: 1px solid $input-border;
 
@@ -141,13 +140,14 @@
   appearance: none;
 
   // IE9 hacks to hide the background-image and reduce padding
-  padding-right: .75rem \9;
+  padding-right: 0.75rem \9;
   background-image: none \9;
 
   &:focus {
     outline: none;
     border-color: #51a7e8;
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(81, 167, 232, 0.5);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075),
+      0 0 5px rgba(81, 167, 232, 0.5);
   }
 
   // Hides the default caret in IE11
@@ -166,7 +166,6 @@
     min-height: 26px;
   }
 }
-
 
 // File
 //
@@ -191,36 +190,36 @@
   left: 0;
   z-index: 5;
   height: 2.5rem;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   line-height: 1.5;
   color: #555;
   user-select: none;
   background-color: #fff;
-  border: .075rem solid #ddd;
-  border-radius: .25rem;
-  box-shadow: inset 0 .2rem .4rem rgba(0,0,0,.05);
+  border: 0.075rem solid #ddd;
+  border-radius: 0.25rem;
+  box-shadow: inset 0 0.2rem 0.4rem rgba(0, 0, 0, 0.05);
 }
 .file-custom:after {
   content: "Choose file...";
 }
 .file-custom:before {
   position: absolute;
-  top: -.075rem;
-  right: -.075rem;
-  bottom: -.075rem;
+  top: -0.075rem;
+  right: -0.075rem;
+  bottom: -0.075rem;
   z-index: 6;
   display: block;
   height: 2.5rem;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   line-height: 1.5;
   color: #555;
   content: "Browse";
   background-color: #eee;
-  border: .075rem solid #ddd;
-  border-radius: 0 .25rem .25rem 0;
+  border: 0.075rem solid #ddd;
+  border-radius: 0 0.25rem 0.25rem 0;
 }
 
 // Focus state
 .file input:focus ~ .file-custom {
-  box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem #0074d9;
+  box-shadow: 0 0 0 0.075rem #fff, 0 0 0 0.2rem #0074d9;
 }
