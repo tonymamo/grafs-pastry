@@ -1,0 +1,46 @@
+// bower:scss
+// endbower
+
+@import 'rainier-framework/rainier';
+@import 'header';
+@import 'wufoo';
+
+body {
+  background: url('../images/bg.png');
+}
+
+.browserupgrade {
+  margin: 0 0 $spacer 0;
+  background: $gray-lighter;
+  padding: $spacer;
+}
+
+body {
+  padding: $spacer;
+}
+
+.wrapper {
+  padding: $spacer;
+  background-color: $body-bg;
+  max-width: 75rem;
+  margin: 0 auto;
+  border: $border-width solid $base-border-color;
+  border-radius: $border-radius;
+  box-shadow: 0 0 $half-spacer rgba($brand-primary,0.25);
+}
+
+.bordered-image {
+  border: $border-width solid $base-border-color;
+  background: $gray-lightest;
+  padding: $half-spacer;
+  width: 100%;
+  margin-bottom: $spacer;
+  border-radius: $border-radius;
+}
+
+.wedding-image {
+}
+
+.facebook {
+  overflow-x: auto;
+}

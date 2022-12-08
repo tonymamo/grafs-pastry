@@ -1,0 +1,46 @@
+.header {
+	margin: (2 * $spacer) 0;
+}
+
+.header__logo,
+.main-nav {
+	text-align: center;
+	display: block;
+	
+	&:hover a,
+	& a:active,
+	& a:focus {
+		text-decoration: none;
+	}
+}
+
+.header__logo {
+	margin-right: $spacer;
+	color: $brand-primary;
+	font-family: $font-family-brand;
+
+	@include media-breakpoint-up(md) {
+		text-align: left;
+		display: inline-block;
+	}
+}
+
+.main-nav {
+	line-height: 2 * $spacer;
+	
+	@include media-breakpoint-up(md) {
+		text-align: right;
+		display: inline-block;
+	}
+}
+
+.main-nav__item {
+	padding: $half-spacer;
+	color: $brand-secondary;
+}
+
+.header__helpers {
+	@include media-breakpoint-up(md) {
+		display: none
+	}
+}
