@@ -3,11 +3,8 @@
   "engines": {
     "node": ">=0.12.0"
   },
-  "scripts": {
-    "preinstall": "npx npm-force-resolutions"
-  },
-  "resolutions": {
-    "graceful-fs": "^4.2.11"
+  "overrides": {
+    "graceful-fs": "4.2.11"
   },
   "devDependencies": {
     "babel-core": "^5.5.6",
